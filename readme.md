@@ -1,0 +1,2 @@
+### What is this repository?
+It contains the flyway migrations files and documentation implemented to maintain a SQL Server database. These files are used to keep a track of the versions of the database and the changes made to it.
