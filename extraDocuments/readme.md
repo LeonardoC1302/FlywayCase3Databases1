@@ -6,3 +6,7 @@ It contains the flyway migrations files and documentation implemented to maintai
 - If you have any problems with flyway, make sure to use the configuration file on the extraDocuments folder on this repository.
 - On the documentations, you can find other important information about the database and the requierements of the homework.
 - Before making any migrations, make sure your flyway is working by running 'flyway -v'
+- To check if your migrations worked, execute the following command on the query of your SQL Server Database:
+
+SELECT version, description, script, installed_on
+FROM flyway_schema_history;
