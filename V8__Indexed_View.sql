@@ -10,10 +10,3 @@ INNER JOIN dbo.containerTypes ON dbo.containers.containerTypeId = dbo.containerT
 INNER JOIN dbo.producersXmovements ON dbo.wasteMovements.wasteMovementId = dbo.producersXmovements.wasteMovementId 
 INNER JOIN dbo.producers ON dbo.producersXmovements.producerId = dbo.producers.producerId
 WHERE quantity > 400;
-
-CREATE UNIQUE CLUSTERED INDEX ix_IndexedView ON dbo.IndexedView (wasteMovementId);
-
-set statistics io on;
-
-select * from  dbo.IndexedView;
-select * from  dbo.IndexedView with(noexpand);

@@ -1,0 +1,1 @@
+CREATE UNIQUE CLUSTERED INDEX ix_IndexedView ON dbo.IndexedView (wasteMovementId);
