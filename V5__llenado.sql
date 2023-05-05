@@ -302,5 +302,4 @@ VALUES
 
 INSERT INTO [dbo].[containerActions]([actionName])
 VALUES
- ('Cleaning')
-
+('Cleaning')
